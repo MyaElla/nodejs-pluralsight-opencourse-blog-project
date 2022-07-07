@@ -1,7 +1,9 @@
 {
   "name": "blog-project",
   "version": "1.0.0",
+  "homepage": "https://github.com/MyaElla/blog-project#readme",
   "description": "blog post api project",
+  "repository": "github:MyaElla/blog-project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
