@@ -20,3 +20,14 @@ http://localhost:3000/api/todos/
 ###
 
 http://localhost:3000/api/todos/1
+
+###
+
+POST http://localhost:3000/api/blogposts/ HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Sample blog post title",
+    "body": "Text of a sample blog post",
+    "userId": 2
+}

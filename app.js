@@ -1,6 +1,7 @@
 const express = require("express");
 
 const app = express(); //initialize a new Express app by calling the express() constructor
+app.use(express.json()); //use the express.json() middleware to parse JSON bodies into JS objects
 
 // add top-level route handler
 app.get("/", (req, res) => {
