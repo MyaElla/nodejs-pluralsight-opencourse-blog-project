@@ -39,3 +39,19 @@ exports.create = async (req, res) => {
 
   res.send(response.data);
 };
+
+exports.update = async (req, res) => {
+  const response = await axios.put(
+    "https://jsonplaceholder.typicode.com/posts/" + req.params.id,
+    {
+      id: req.body.id,
+      title: req.body.title,
+      body: req.body.body,
+      userId: req.body.userId
+    }
+  );
+  // req.params.id -> params in url
+  // req.body -> body of the request
+
+  res.send(response.data);
+};

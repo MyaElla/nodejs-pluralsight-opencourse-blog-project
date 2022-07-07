@@ -9,6 +9,7 @@ module.exports = (app) => {
   router.get("/", bPosts.findAll);
   router.get("/:id", bPosts.findById);
   router.post("/", bPosts.create);
+  router.put("/:id", bPosts.update);
 
   app.use("/api/blogPosts", router);
 };

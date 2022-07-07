@@ -31,3 +31,15 @@ content-type: application/json
     "body": "Text of a sample blog post",
     "userId": 2
 }
+
+###
+
+PUT http://localhost:3000/api/blogposts/1 HTTP/1.1 
+content-type: application/json
+
+{
+   "id": 1,
+   "title": "Our trip to Paris, France",
+   "body": "We finally saw Eiffel Tower.",
+   "userId": 2
+}
