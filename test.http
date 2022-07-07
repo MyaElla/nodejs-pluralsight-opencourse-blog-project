@@ -43,3 +43,7 @@ content-type: application/json
    "body": "We finally saw Eiffel Tower.",
    "userId": 2
 }
+
+###
+
+DELETE http://localhost:3000/api/posts/1

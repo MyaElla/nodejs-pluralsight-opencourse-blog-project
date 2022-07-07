@@ -55,3 +55,12 @@ exports.update = async (req, res) => {
 
   res.send(response.data);
 };
+
+
+exports.delete = async (req, res) => {
+  const response = await axios.delete(
+    "https://jsonplaceholder.typicode.com/posts/" + req.params.id
+  );
+
+  res.send(response.data);
+};
