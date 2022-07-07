@@ -8,6 +8,9 @@ module.exports = (app) => {
   const bPosts = require("../controllers/blogPosts.controller");
   router.get("/", bPosts.findAll);
   router.get("/:id", bPosts.findById);
+  router.post("/", bPosts.create);
+  router.put("/:id", bPosts.update);
+  router.delete("/:id", bPosts.delete);
 
   app.use("/api/blogPosts", router);
 };
